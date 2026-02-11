@@ -1,3 +1,3 @@
 # nUnitPlaywrightAPI
 nUnitPlaywrightAPI
-кто сказал что playwrite для тестирования UI? маленький пример тестов API
+Who said PlayWrite is for UI testing? A small example of API testing.
