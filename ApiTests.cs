@@ -51,14 +51,11 @@ namespace nUnitPlaywrightAPI
             );
 
             var response = await _httpClientHelper.MakeRequestAsync("https://jsonplaceholder.typicode.com/posts/1", HttpMethod.Put, jsonContent);
-
-            // Проверяем, что статус ответа 200
+            
             Assert.That((int)response.StatusCode, Is.EqualTo(200));
 
-            // Получаем содержимое ответа
             var jsonData = await response.Content.ReadAsStringAsync();
 
-            // Десериализация JSON в объект
             var updatedPost = JsonConvert.DeserializeObject<dynamic>(jsonData);
             var title = updatedPost.title;
 
