@@ -57,7 +57,9 @@ namespace nUnitPlaywrightAPI
             var jsonData = await response.Content.ReadAsStringAsync();
 
             var updatedPost = JsonConvert.DeserializeObject<dynamic>(jsonData);
+#pragma warning disable CS8602 // Разыменование вероятной пустой ссылки.
             var title = updatedPost.title;
+#pragma warning restore CS8602 // Разыменование вероятной пустой ссылки.
 
             Assert.Multiple(() =>
             {
