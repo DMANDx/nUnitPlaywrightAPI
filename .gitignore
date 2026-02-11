@@ -12,3 +12,5 @@ BrainFEmulator/.vs/BrainFEmulator/v17/.futdcache.v2
 BrainFEmulator/.vs/ProjectEvaluation/brainfemulator.metadata.v6.1
 .gitattributes
 /.vs
+/bin
+/obj
